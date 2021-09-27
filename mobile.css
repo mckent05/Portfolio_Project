@@ -239,7 +239,7 @@ body {
   box-shadow: 1px 2px 6px rgba(125, 115, 252, 0.48);
   border-radius: 8px;
 }
-  
+
 .content {
   position: absolute;
   width: 375px;
@@ -1643,11 +1643,6 @@ button:active {
     transition: ease-in 0.5s;
   }
 
-  .item-links a:hover {
-    color:royalblue;
-    padding: 8px 0;
-  }
-
   .logo {
     position: static;
     width: 77px;
@@ -1697,7 +1692,6 @@ button:active {
     left: calc(50% - 1156px / 2);
     top: 114px;
   }
-
 
   .primary-text {
     position: static;
@@ -2145,6 +2139,92 @@ button:active {
     line-height: 28px;
     text-align: center;
   }
+
+  .item-links a:hover {
+    color: royalblue;
+    padding: 8px 0;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 699px) {
+  body {
+    left: 0;
+    transform: translateX(0);
+    width: 100vw;
+  }
+
+  .black-underline {
+    display: none;
+  }
+
+  .status-bar {
+    display: none;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .content {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .images {
+    width: 100vw;
+  }
+
+  .eclipse2 {
+    right: 2%;
+    position: absolute;
+  }
+
+  .work-section {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .work1 {
+    z-index: 999;
+  }
+
+  .work2 {
+    z-index: 999;
+  }
+
+  .work3 {
+    z-index: 999;
+  }
+
+  .work4 {
+    z-index: 999;
+  }
+
+  .work-backg {
+    width: 100vw;
+  }
+
+  .back2 {
+    right: 0;
+  }
+
+  .back4 {
+    display: none;
+  }
+
+  .contact-form {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer {
+    width: 100vw;
+  }
+
+  .footer-social-media {
+    left: 50%;
+    transform: translateX(-55%);
+  }
 }
 
 @media screen and (min-width: 700px) and (max-width: 992px) {
@@ -2296,7 +2376,7 @@ button:active {
   }
 
   .item-links a:hover {
-    color:royalblue;
+    color: royalblue;
     padding: 8px 0;
   }
 
@@ -2345,7 +2425,7 @@ button:active {
     padding: 0;
     position: absolute;
     width: 100%;
-    height:35%;
+    height: 35%;
     left: 0;
     top: 5%;
   }
@@ -2436,11 +2516,16 @@ button:active {
     justify-content: center;
   }
 
-  .lang, .language {
+  .lang {
     position: absolute;
     left: 20%;
   }
-  
+
+  .language {
+    position: absolute;
+    left: 20%;
+  }
+
   .frameworks {
     position: absolute;
     left: 38%;
@@ -2455,7 +2540,7 @@ button:active {
   .underline2 {
     position: absolute;
     width: 50%;
-    top:45%;
+    top: 45%;
     left: 20%;
   }
 
@@ -2471,7 +2556,7 @@ button:active {
     left: -100%;
   }
 
-  .work-btn, .work-btn2 {
+  .work-btn2 {
     display: none;
   }
 
@@ -2573,9 +2658,8 @@ button:active {
     width: 100%;
     top: 30%;
     left: 0;
-    border: 2px solid red;
   }
-  
+
   .project-desc {
     width: 100%;
     top: 20%;
@@ -2583,13 +2667,12 @@ button:active {
     position: absolute;
     min-width: 50%;
     text-overflow: ellipsis;
-    border: 2px solid brown;
   }
 
   .tag {
     position: absolute;
     width: 100%;
-    top: 65%;  
+    top: 65%;
   }
 
   .project-title {
@@ -2602,7 +2685,7 @@ button:active {
     position: absolute;
     bottom: 0;
   }
-  
+
   .work2 {
     display: flex;
     flex-direction: column;
@@ -2742,8 +2825,9 @@ button:active {
     padding: 114px 0;
     position: absolute;
     width: 100vw;
-    left: 0;
     top: 83%;
+    left: 50%;
+    transform: translateX(-45%);
   }
 
   .form {
@@ -2759,7 +2843,7 @@ button:active {
   }
 
   #input {
-    top:0;
+    top: 0;
     position: absolute;
     width: 50%;
     left: 25%;
@@ -2824,6 +2908,3 @@ button:active {
     width: 100%;
   }
 }
-
-  
-

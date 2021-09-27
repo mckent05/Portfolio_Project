@@ -3,6 +3,9 @@
 > This is my Portfolio Project
 > I created this project using Figma templates provided by Microverse
 
+# Live View
+> To view this project live, please visit the url https://mckent05.github.io/Portfolio_Project/mobile.html
+
 # Getting Started
 
 > Visit my repository www.https://github.com/mckent05/Portfolio_Project.git
