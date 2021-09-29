@@ -1124,13 +1124,13 @@ body {
   height: 18px;
   left: 0;
   top: 421px;
-  background-color: #7d73fc;
+  background-color: #bfb3ef;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
   line-height: 24px;
-  color: #fff;
+  color: #2d1a7a;
 }
 
 .work-title {
@@ -1363,8 +1363,8 @@ body {
   left: 118px;
   bottom: 1%;
   font-weight: 500;
-  background-color: #7d73fc;
-  color: #fff;
+  background-color: #bfb3ef;
+  color: #2d1a7a;
   text-transform: capitalize;
   font-family: 'Roboto', sans-serif;
   justify-content: center;
@@ -1644,7 +1644,7 @@ button:active {
     line-height: 20px;
     text-decoration: none;
     color: #fff;
-    transition: ease-in 0.5s;
+    transition: ease-in 2s;
   }
 
   .logo {
@@ -2145,8 +2145,7 @@ button:active {
   }
 
   .item-links a:hover {
-    color: yellow;
-    padding: 8px 0;
+    text-decoration: underline;
   }
 }
 
@@ -2382,12 +2381,11 @@ button:active {
     line-height: 20px;
     text-decoration: none;
     color: #fff;
-    transition: ease-in 0.5s;
+    transition: ease-in 2s;
   }
 
   .item-links a:hover {
-    color: yellow;
-    padding: 8px 0;
+    text-decoration: underline;
   }
 
   .logo {
