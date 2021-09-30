@@ -1,5 +1,5 @@
 body {
-  min-width: 375px;
+  max-width: 375px;
   top: 0;
   margin: 0;
   right: 0;
@@ -673,7 +673,6 @@ body {
     width: 33.33%;
   }
 
-
   .normal-button {
     display: none;
   }
@@ -702,7 +701,7 @@ body {
 
   .recent-work {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 98vw;
     grid-template-rows: auto auto auto auto;
     row-gap: 80px;
   }
@@ -716,7 +715,7 @@ body {
   .recent-work > div {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100.8%;
   }
 
   .recent-work > div:nth-of-type(2) {
@@ -757,10 +756,7 @@ body {
     color: #dfe1e6;
   }
 
-  .bg1 {
-    background-image: url('icons/desktop1.png');
-  }
-
+  
   .bg2 {
     background-image: url('icons/desktop2.png');
     background-size: 30%;
@@ -773,6 +769,7 @@ body {
 
   .bg4 {
     background-image: url('icons/desktop4.png');
+    background-position-x: 100%;
   }
 
   .contact-form {
@@ -805,7 +802,7 @@ body {
   }
 
   .footer {
-    width: 100vw;
+    width: 98vw;
   }
 
   .footer-social-media {
