@@ -30,6 +30,10 @@ body {
   position: relative;
 }
 
+.icon-img {
+  width: 50px;
+}
+
 .item-links,
 .email-icon,
 .big-circle1,
@@ -427,10 +431,15 @@ body {
 }
 
 #input,
-#email,
-#message {
+#email{
   width: 90%;
   height: 30px;
+  outline: 1px solid #fff;
+}
+
+#message {
+  height: 90px;
+  width: 90%;
   outline: 1px solid #fff;
 }
 
@@ -721,7 +730,7 @@ body {
 
   .work1 > div {
     width: 30%;
-    justify-content: flex-end;  
+    justify-content: flex-end;
   }
 
   .recent-work > div:nth-of-type(2) {
