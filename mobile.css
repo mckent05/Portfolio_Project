@@ -341,13 +341,15 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  background-color: #bfb3ef;
-  color: #2d1a7a;
+  background-color: #7d73fc;
+  color: #edecff;
   padding: 12px 8px;
 }
 
 .proj-btn:hover {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  background: #7d73fc;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  color: #fff;
 }
 
 .project-title {
@@ -419,15 +421,17 @@ body {
 .submit-btn {
   width: 90px;
   height: 50px;
-  background-color: #bfb3ef;
-  color: #2d1a7a;
+  background-color: #7d73fc;
+  color: #edecff;
   border: none;
   text-transform: capitalize;
   font-size: 18px;
 }
 
 .submit-btn:hover {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.49);
+  background: #7d73fc;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
+  color: #fff;
 }
 
 #input,
