@@ -76,12 +76,13 @@ body {
     transform: translateX(0%);
   }
 }
+
 .primary-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  color: #7d73fc ;
+  color: #7d73fc;
   text-transform: capitalize;
   text-align: center;
 }
@@ -140,6 +141,18 @@ body {
   color: #9490ff;
 }
 
+.contact-me p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 87.3%;
+  left: 50%;
+  color: #f5f5ff;
+}
+
 .lang-cont li p {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -164,7 +177,6 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
-  
 }
 
 .media {
@@ -203,9 +215,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items:flex-start;
+  align-items: flex-start;
   row-gap: 10px;
-  margin-left: 2% 0;
+  margin-left: 2%;
 }
 
 .work-title h1 {
@@ -274,7 +286,7 @@ body {
 .bg4 {
   background-image: url('icons/back4.png');
   background-repeat: no-repeat;
-  background-position: right; 
+  background-position: right;
   background-position-y: 0;
 }
 
@@ -331,7 +343,7 @@ body {
 }
 
 .proj-btn:hover {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48)
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .project-title {
@@ -391,18 +403,6 @@ body {
   display: none;
 }
 
-.contact-me p {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  width: 87.3%;
-  left: 50%;
-  color: #f5f5ff;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -423,7 +423,7 @@ body {
 }
 
 .submit-btn:hover {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.49)
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.49);
 }
 
 #input,
@@ -457,14 +457,13 @@ body {
   color: #ebebff;
 }
 
-@media screen and (min-width: 425px) and (max-width:991px) {
+@media screen and (min-width: 425px) and (max-width: 991px) {
   body {
     width: 100vw;
   }
 
   .main-nav {
     width: 98vw;
-     
   }
 
   .tool-bar {
@@ -478,15 +477,15 @@ body {
 
   .skills {
     width: 100%;
-    flex-wrap: none;
-    margin-left: 10%;  
+    flex-wrap: nowrap;
+    margin-left: 10%;
   }
 
   .skills > div {
     width: 33.33%;
   }
 
-  .work-section{
+  .work-section {
     width: 100vw;
   }
 
@@ -495,7 +494,7 @@ body {
   }
 
   .recent-work {
-    grid-template-columns:100vw;
+    grid-template-columns: 100vw;
   }
 
   .work1-link {
@@ -512,7 +511,7 @@ body {
     position: relative;
     transform: translateX(-50%);
   }
-  
+
   .bg2 {
     background-size: 28%;
     background-position-y: 0;
@@ -603,11 +602,11 @@ body {
     0% {
       transform: translateX(100%);
     }
-  
+
     50% {
       transform: translateX(50%);
     }
-  
+
     100% {
       transform: translateX(0%);
     }
@@ -720,24 +719,25 @@ body {
     width: 100.8%;
   }
 
+  .work1 > div {
+    width: 30%;
+    justify-content: flex-end;  
+  }
+
   .recent-work > div:nth-of-type(2) {
     flex-direction: row-reverse;
   }
+
   .recent-work > div:nth-of-type(4) {
     flex-direction: row-reverse;
   }
-  
+
   .work1-link {
     width: 55%;
   }
 
   .work1-link img {
     width: 100%;
-  }
-
-  .work1 > div {
-    width: 30%;
-    justify-content: flex-end;  
   }
 
   .project-title {
@@ -758,7 +758,6 @@ body {
     color: #dfe1e6;
   }
 
-  
   .bg2 {
     background-image: url('icons/desktop2.png');
     background-size: 30%;
@@ -787,7 +786,7 @@ body {
   .contact-us {
     display: none;
   }
-  
+
   .chat {
     display: flex;
     font-family: 'Roboto', sans-serif;
@@ -817,5 +816,4 @@ body {
   .submit-btn {
     margin-top: 50px;
   }
-
 }
