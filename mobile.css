@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 body {
-  max-width: 375px;
+  width: 375px;
   top: 0;
   margin: 0;
   right: 0;
@@ -12,29 +12,31 @@ body {
 }
 
 .main-nav {
-  width: 350px;
+  width: 355px;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
   align-items: center;
-  margin: 15px 8px;
+  margin: 15px 0;
 }
 
 .tool-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 375px;
+  width: 90%;
   align-items: center;
   position: relative;
+  margin: 0 auto;
 }
 
 .icon-img {
   width: 50px;
 }
 
-.item-links,
+.wrapper,
 .email-icon,
 .big-circle1,
 .big-circle2 {
@@ -111,8 +113,7 @@ body {
 
 .skills {
   position: relative;
-  width: 375px;
-  margin-left: 5%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -124,7 +125,8 @@ body {
 }
 
 .skills > div {
-  width: 50%;
+  width: 45%;
+  margin-left: 4%;
 }
 
 .description {
@@ -218,10 +220,9 @@ body {
 .work-title {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   align-items: flex-start;
   row-gap: 10px;
-  margin-left: 2%;
 }
 
 .work-title h1 {
@@ -234,6 +235,7 @@ body {
   color: #9490ff;
   margin-left: 5%;
   text-transform: capitalize;
+  
 }
 
 .underline3 {
@@ -245,7 +247,7 @@ body {
 
 .recent-work {
   display: grid;
-  grid-template-columns: 395px;
+  grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
   z-index: 999;
   row-gap: 20px;
@@ -264,6 +266,7 @@ body {
   row-gap: 30px;
   z-index: 999;
   width: 375px;
+  
 }
 
 .bg1 {
@@ -374,7 +377,7 @@ body {
 }
 
 .contact-form {
-  width: 375px;
+  width: 355px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -412,10 +415,11 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 355px;
   align-items: center;
   row-gap: 10px;
-  left: 2%;
+  left: 0;
+  position: relative;
 }
 
 .submit-btn {
@@ -453,7 +457,7 @@ body {
   flex-direction: column;
   row-gap: 2px;
   align-items: center;
-  width: 375px;
+  width: 355px;
 }
 
 .underline-footer {
@@ -470,17 +474,19 @@ body {
   color: #ebebff;
 }
 
-@media screen and (min-width: 425px) and (max-width: 991px) {
+@media screen and (min-width: 376px) and (max-width: 991px) {
   body {
-    width: 100vw;
-  }
-
-  .main-nav {
     width: 98vw;
   }
 
+  .main-nav {
+    width: 95vw;
+    position: relative;
+    margin: 10px auto;
+  }
+
   .tool-bar {
-    width: 100%;
+    width: 98vw;
   }
 
   .content {
@@ -491,7 +497,6 @@ body {
   .skills {
     width: 100%;
     flex-wrap: nowrap;
-    margin-left: 10%;
   }
 
   .skills > div {
@@ -499,7 +504,15 @@ body {
   }
 
   .work-section {
-    width: 100vw;
+    width: 98vw;
+  }
+
+  .work-title {
+    width: 95vw;
+  }
+
+  .work1 {
+    width: 98vw;
   }
 
   .work-title h1 {
@@ -507,7 +520,11 @@ body {
   }
 
   .recent-work {
-    grid-template-columns: 100vw;
+    grid-template-columns: 98vw;
+  }
+
+  .recent-work > div {
+    width: 100vw;
   }
 
   .work1-link {
@@ -531,7 +548,7 @@ body {
   }
 
   .contact-form {
-    width: 100vw;
+    width: 98vw;
   }
 
   .contact-me {
@@ -543,7 +560,7 @@ body {
   }
 
   .footer {
-    width: 100vw;
+    width: 98vw;
   }
 
   .footer-social-media {
@@ -556,7 +573,7 @@ body {
 
 @media screen and (min-width: 992px) {
   body {
-    width: 100vw;
+    width: 98vw;
     background-image: url('icons/circle2header@2x.png');
     background-repeat: no-repeat;
     background-size: 15%;
@@ -565,7 +582,7 @@ body {
   }
 
   .main-nav {
-    width: 97vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -586,6 +603,10 @@ body {
     column-gap: 20px;
     align-items: center;
     animation: topes 1.5s 1;
+  }
+
+  .wrapper button {
+    display: none;
   }
 
   .item-links {
@@ -715,7 +736,7 @@ body {
 
   .recent-work {
     display: grid;
-    grid-template-columns: 98vw;
+    grid-template-columns: 98.7vw;
     grid-template-rows: auto auto auto auto;
     row-gap: 80px;
   }
@@ -724,12 +745,15 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
+    width: 100%;
+  
+    
   }
 
   .recent-work > div {
     display: flex;
     flex-direction: row;
-    width: 100.8%;
+    width: 100%;
   }
 
   .work1 > div {
