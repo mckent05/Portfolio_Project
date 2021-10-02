@@ -9,10 +9,11 @@ body {
   left: 0;
   background-color: #191765;
   z-index: 999;
+  scroll-behavior: smooth;
 }
 
 .main-nav {
-  width: 355px;
+  width: 370px;
   position: relative;
   top: 0;
   left: 0;
@@ -36,11 +37,88 @@ body {
   width: 50px;
 }
 
-.wrapper,
 .email-icon,
 .big-circle1,
 .big-circle2 {
   display: none;
+}
+
+.wrapper {
+  width: 375px;
+  position: absolute;
+  height: 100vh;
+  background-color: #191765;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-image: url('icons/navbackg.png');
+  transform: translateX(-150%);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+
+}
+
+.show-nav {
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.wrapper button {
+  background-color: transparent;
+  border: none;
+}
+
+
+.fa {
+  transform: scale(2);
+  color: #edecff;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 20px;
+}
+
+.item-links {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  background-image: url('icons/navbackg2.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-x: 100%;
+  background-position-y: 100%;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+}
+
+.item-links li {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 5%;
+  position: relative;
+  margin: 10px auto;
+  z-index: 999;
+  padding: 0;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.item-links a {
+  color: #edecff;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 .content {
@@ -55,6 +133,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: 0;
   background-size: auto;
+  z-index: -99;
 }
 
 .name-header {
@@ -597,10 +676,12 @@ body {
     display: flex;
     flex-direction: row;
     width: 70%;
+    height: auto;
     justify-content: flex-end;
     position: relative;
-    right: 50px;
+    right: 80px;
     column-gap: 20px;
+    transform: translateX(0);
     align-items: center;
     animation: topes 1.5s 1;
   }
@@ -615,6 +696,7 @@ body {
     list-style-type: none;
     padding: 0;
     column-gap: 20px;
+    height: auto;
   }
 
   .item-links li a {
@@ -706,6 +788,9 @@ body {
 
   .skills > div {
     width: 33.33%;
+    margin: 0;
+    left: 7.5%;
+    position: relative;
   }
 
   .normal-button {
@@ -746,8 +831,6 @@ body {
     flex-direction: row;
     position: relative;
     width: 100%;
-  
-    
   }
 
   .recent-work > div {
