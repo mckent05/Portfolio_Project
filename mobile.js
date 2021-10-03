@@ -11,7 +11,7 @@ clos.addEventListener ('click', function() {
 
 window.addEventListener ('scroll', function () {
     let scroll=this.pageYOffset
-    if (scroll > 700) {
+    if (scroll > 50) {
         overlay.classList.remove('show-nav')
     }
 })

@@ -48,15 +48,15 @@ body {
   position: absolute;
   height: 100vh;
   background-color: #191765;
-  top: 0;
+  top: 0%;
   left: 0;
+  bottom: 0%;
   z-index: 999;
   background-image: url('icons/navbackg.png');
   transform: translateX(-150%);
   background-size: 65%;
   background-repeat: no-repeat;
   background-position-y: 70%;
-
 }
 
 .show-nav {
@@ -84,14 +84,14 @@ body {
 .item-links {
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 95vh;
   padding: 0;
   width: 100%;
   position: relative;
   z-index: 999;
   background-image: url('icons/navbackg2.png');
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 65%;
   background-position-x: 100%;
   background-position-y: 100%;
 }
@@ -106,7 +106,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  height: 5%;
+  height: 2%;
   position: relative;
   margin: 10px auto;
   z-index: 999;
@@ -578,6 +578,10 @@ body {
     flex-wrap: nowrap;
   }
 
+  .wrapper {
+    left: -2%;
+  }
+
   .skills > div {
     width: 33.33%;
   }
@@ -684,6 +688,7 @@ body {
     transform: translateX(0);
     align-items: center;
     animation: topes 1.5s 1;
+    background-image: none;
   }
 
   .wrapper button {
@@ -697,6 +702,12 @@ body {
     padding: 0;
     column-gap: 20px;
     height: auto;
+    background-image: none;
+  }
+
+  .item-links li {
+    height: auto;
+    padding: 0;
   }
 
   .item-links li a {
