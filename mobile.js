@@ -18,22 +18,16 @@ const email = document.getElementById('email');
 const errorMessage = document.querySelector('.error-msg');
 const form = document.querySelector('.form');
 
-form.addEventListener('submit', (e) => {
-  if (!email.validity.valid) {
-    showError();
-    e.preventDefault();
-  }
-  if (isUpper(email)) {
-    showError();
-    e.preventDefault();
-  }
-});
+function isUpper(email) {
+  const str = email.value;
+  return !/[a-z]/.test(str) && /[A-Z]/.test(str);
+}
 
 function showError() {
   if (email.validity.typeMismatch) {
     errorMessage.innerHTML = '*Please Enter Valid email';
     errorMessage.classList.add('show-error');
-    setTimeout( () => {
+    setTimeout(() => {
       errorMessage.innerHTML = '';
       errorMessage.classList.remove('show-error');
     }, 2000);
@@ -48,10 +42,16 @@ function showError() {
   }
 }
 
-function isUpper(email) {
-  const str = email.value;
-  return !/[a-z]/.test(str) && /[A-Z]/.test(str);
-}
+form.addEventListener('submit', (e) => {
+  if (!email.validity.valid) {
+    showError();
+    e.preventDefault();
+  }
+  if (isUpper(email)) {
+    showError();
+    e.preventDefault();
+  }
+});
 
 window.addEventListener('DOMContentLoaded', () => {
   modal.innerHTML = ` <div class="work-modal">
@@ -95,7 +95,7 @@ btn.addEventListener('click', () => {
   overlay.classList.add('show-nav');
 });
 clos.addEventListener('click', () => {
-  overlay.classList.remove ('show-nav');
+  overlay.classList.remove('show-nav');
 });
 
 window.addEventListener('scroll', () => {
