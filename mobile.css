@@ -311,6 +311,7 @@ body {
   grid-template-rows: auto auto;
   row-gap: 70px;
   position: relative;
+  z-index: 0;
 }
 
 .work-title {
