@@ -73,7 +73,6 @@ body {
   border: none;
 }
 
-
 .fa {
   transform: scale(2);
   color: #edecff;
@@ -244,6 +243,16 @@ body {
   color: #f5f5ff;
 }
 
+.modal-desc p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}
+
 .lang-cont li p {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -351,7 +360,7 @@ body {
   flex-direction: column;
   row-gap: 30px;
   z-index: 999;
-  width: 375px; 
+  width: 375px;
 }
 
 .work-modal-cont {
@@ -378,7 +387,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255,255,255,0.16);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .show-modal {
@@ -394,7 +403,7 @@ body {
   row-gap: 10px;
 }
 
-.modal-header{
+.modal-header {
   position: relative;
   width: 90%;
   display: flex;
@@ -436,20 +445,23 @@ body {
   align-items: center;
 }
 
-.modal-desc p {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #fff;
-  text-align: center;
-}
-
 .modal-desc ul {
   width: 100%;
   column-gap: 20px;
   padding: 0;
+}
+
+.tag li {
+  width: 25%;
+  text-align: left;
+  padding: 5px;
+  border-right: 1px solid grey;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
 }
 
 .modal-desc ul li {
@@ -487,6 +499,7 @@ body {
 .modal-btn button:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
+
 .bg1 {
   background-image: url('icons/back1.png');
   background-repeat: no-repeat;
@@ -534,19 +547,6 @@ body {
   list-style: none;
   width: 90%;
   justify-content: flex-start;
-}
-
-.tag li {
-  width: 25%;
-  text-align: left;
-  padding: 5px;
-  border-right: 1px solid grey;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
 }
 
 .tag li:last-of-type {
@@ -1015,7 +1015,6 @@ body {
   .modal-desc {
     width: 60%;
     row-gap: 20px;
-    
   }
 
   .work-modal-cont {
@@ -1044,6 +1043,7 @@ body {
     flex-direction: row;
     column-gap: 50px;
   }
+  
   .modal-title {
     font-weight: 500;
     font-size: 24px;

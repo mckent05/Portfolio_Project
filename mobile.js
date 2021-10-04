@@ -1,64 +1,61 @@
-let projectInfo= {
-    title: 'multi-post story',
-    image: 'icons/portfolio.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
-    tech1 : 'html',
-    tech2 : 'css',
-    tech3 : 'Ruby on Rails',
-    tech4 : 'Ruby'
-}
+const projectInfo = {
+  title: 'multi-post story',
+  image: 'icons/portfolio.png',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
+  tech1: 'html',
+  tech2: 'css',
+  tech3: 'Ruby on Rails',
+  tech4: 'Ruby'
+};
 
-let btn=document.querySelector ('.icon img')
-let overlay = document.querySelector('.wrapper')
-let clos= document.querySelector('.close-btn')
-let openModal= document.querySelectorAll('.proj-btn')
-let modal= document.querySelector('.work-modal-cont')
-let bod=document.querySelector('.body')
-let email = document.getElementById("email");
-let errorMessage=document.querySelector('.error-msg')
-let form=document.querySelector('.form')
+const btn = document.querySelector('.icon img');
+const overlay = document.querySelector('.wrapper');
+const clos = document.querySelector('.close-btn')
+let openModal = document.querySelectorAll('.proj-btn');
+const modal = document.querySelector('.work-modal-cont');
+const bod = document.querySelector('.body');
+const email = document.getElementById('email');
+const errorMessage = document.querySelector('.error-msg');
+const form = document.querySelector('.form');
 
-form.addEventListener("submit", function (e) {
+form.addEventListener('submit', e => {
   if (!email.validity.valid) {
-    showError ()
-    e.preventDefault()
+    showError();
+    e.preventDefault();
   }
-  if (isUpper(email)){
-    showError()
-    e.preventDefault()
+  if (isUpper(email)) {
+    showError();
+    e.preventDefault();
 }
 
-})
+});
 
-function showError () {
-    if (email.validity.typeMismatch) {
-        errorMessage.innerHTML='*Please Enter Valid email'
-        errorMessage.classList.add('show-error')
-        setTimeout (function(){
-            errorMessage.innerHTML=''
-            errorMessage.classList.remove('show-error')
-        },2000)
-    }
-    if (email.validity.valueMissing) {
-        errorMessage.innerHTML='*Please Enter E-mail Address'
-        errorMessage.classList.add('show-error')
-    }
-
-    if (isUpper(email)){
-        errorMessage.innerHTML='* Your email should be small letters'
-        errorMessage.classList.add('show-error')
-    }
-}
+function showError() {
+  if (email.validity.typeMismatch) {
+    errorMessage.innerHTML = '*Please Enter Valid email';
+    errorMessage.classList.add('show-error');
+    setTimeout (function() {
+      errorMessage.innerHTML = '';
+      errorMessage.classList.remove('show-error');
+    }, 2000);
+  }
+  if (email.validity.valueMissing) {
+    errorMessage.innerHTML = '*Please Enter E-mail Address';
+    errorMessage.classList.add('show-error');
+  }
+  if (isUpper(email)) {
+    errorMessage.innerHTML = '* Your email should be small letters';
+    errorMessage.classList.add('show-error');
+  }
+};
 
 function isUpper(email) {
-    let str= email.value
-    return !/[a-z]/.test(str) && /[A-Z]/.test(str);
-}
+  const str = email.value;
+  return !/[a-z]/.test(str) && /[A-Z]/.test(str);
+};
 
-
-
-window.addEventListener ('DOMContentLoaded', function () {
-    modal.innerHTML= ` <div class="work-modal">
+window.addEventListener('DOMContentLoaded', () => {
+  modal.innerHTML = ` <div class="work-modal">
     <div class="modal-header">
         <h2 class="modal-title">${projectInfo.title}</h2>
         <button class="close-modal"><i class="fa fa-times"></i></button>
@@ -87,34 +84,31 @@ window.addEventListener ('DOMContentLoaded', function () {
 
         </div>
     </div>
-</div>`
-let closeModal=document.querySelector('.close-modal')
-closeModal.addEventListener('click', function(){
-    modal.classList.remove ('show-modal')
-    bod.classList.remove('isfixed')
-})
-})
+</div>`;
+  let closeModal = document.querySelector('.close-modal');
+  closeModal.addEventListener('click', function() {
+    modal.classList.remove ('show-modal');
+    bod.classList.remove('isfixed');
+  });
+});
 
+btn.addEventListener('click', () => {
+  overlay.classList.add('show-nav');
+});
+clos.addEventListener ('click', () => {
+  overlay.classList.remove ('show-nav');
+});
 
-btn.addEventListener('click', function () {
-    overlay.classList.add ('show-nav')
-})
-clos.addEventListener ('click', function() {
-    overlay.classList.remove ('show-nav')
-})
+window.addEventListener ('scroll', () => {
+  const scroll = this.pageYOffset;
+  if (scroll > 50) {
+    overlay.classList.remove('show-nav');
+  }
+});
 
-window.addEventListener ('scroll', function () {
-    let scroll=this.pageYOffset
-    if (scroll > 50) {
-        overlay.classList.remove('show-nav')
-    }
-})
-
-openModal.forEach(function(project){
-    project.addEventListener('click', function (){
-        modal.classList.add('show-modal')
-        bod.classList.add('isfixed')
-    })
-})
-
-
+openModal.forEach((project) => {
+  project.addEventListener('click', () => {
+    modal.classList.add('show-modal');
+    bod.classList.add('isfixed');
+  });
+});
