@@ -53,7 +53,6 @@
                             <a href="#contact"> <p>Contact</p>
                                 <button class="right-arrow"><i class="fa fa-angle-right"></i></button></a></a>
                         </li>
-                        
                     </ul>
                     <button class="close-btn"><i class="fa fa-times"></i></button>
                 </div>
@@ -268,10 +267,11 @@
             <h2 class="chat">let's chat!</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
-        <form action="https://formspree.io/f/xjvjloyy" method="POST" class="form">
+        <form action="https://formspree.io/f/xjvjloyy" method="POST" class="form" novalidate>
           <input id="input" type="text" required placeholder="text input" maxlength="30" name="name">
           <input type="email" required placeholder="myemail@gmail.com" name="email" id="email">
           <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
+          <span class="error-msg">failed fgffgfgfgfgfgfg</span>
           <button type="submit" class="submit-btn">send</button>
         </form>
     </section>

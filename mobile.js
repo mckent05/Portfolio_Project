@@ -14,6 +14,47 @@ let clos= document.querySelector('.close-btn')
 let openModal= document.querySelectorAll('.proj-btn')
 let modal= document.querySelector('.work-modal-cont')
 let bod=document.querySelector('.body')
+let email = document.getElementById("email");
+let errorMessage=document.querySelector('.error-msg')
+let form=document.querySelector('.form')
+
+form.addEventListener("submit", function (e) {
+  if (!email.validity.valid) {
+    showError ()
+    e.preventDefault()
+  }
+  if (isUpper(email)){
+    showError()
+    e.preventDefault()
+}
+
+})
+
+function showError () {
+    if (email.validity.typeMismatch) {
+        errorMessage.innerHTML='*Please Enter Valid email'
+        errorMessage.classList.add('show-error')
+        setTimeout (function(){
+            errorMessage.innerHTML=''
+            errorMessage.classList.remove('show-error')
+        },2000)
+    }
+    if (email.validity.valueMissing) {
+        errorMessage.innerHTML='*Please Enter E-mail Address'
+        errorMessage.classList.add('show-error')
+    }
+
+    if (isUpper(email)){
+        errorMessage.innerHTML='* Your email should be small letters'
+        errorMessage.classList.add('show-error')
+    }
+}
+
+function isUpper(email) {
+    let str= email.value
+    return !/[a-z]/.test(str) && /[A-Z]/.test(str);
+}
+
 
 
 window.addEventListener ('DOMContentLoaded', function () {

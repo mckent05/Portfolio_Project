@@ -116,7 +116,6 @@ body {
   z-index: 999;
   padding: 0;
   align-items: center;
-  padding: 7px 0;
 }
 
 .item-links a {
@@ -662,6 +661,18 @@ body {
   width: 90%;
   height: 30px;
   outline: 1px solid #fff;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  display: none;
+}
+
+.show-error {
+  display: inline-block;
 }
 
 #message {
