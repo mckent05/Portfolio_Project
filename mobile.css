@@ -99,7 +99,7 @@ body {
   background-position-x: 100%;
   background-position-y: 100%;
   list-style-type: none;
-  row-gap: 10px;
+  row-gap: 20px;
 }
 
 .close-btn {
@@ -855,6 +855,7 @@ body {
     column-gap: 20px;
     height: auto;
     background-image: none;
+    justify-items: flex-start;
   }
 
   .item-links li {
