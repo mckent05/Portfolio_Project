@@ -4,11 +4,11 @@
 > I created this project using Figma templates provided by Microverse
 
 # Live View
-> To view this project live, please visit this (page)['https://mckent05.github.io/Portfolio_Project/mobile.html']
+> To view this project live, please visit this [page](https://mckent05.github.io/Portfolio_Project/mobile.html)
 
 # Getting Started
 
-> Visit my (repository)['www.https://github.com/mckent05/Portfolio_Project.git']
+> Visit my [repository](www.https://github.com/mckent05/Portfolio_Project.git)
 > Clone the repository in your code editor using the URL above.
 > Change directory into the repository and make your desried changes.
 
