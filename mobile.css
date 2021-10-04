@@ -74,7 +74,7 @@ body {
 }
 
 .fa {
-  transform: scale(2);
+  transform: scale(1.5);
   color: #edecff;
 }
 
@@ -98,7 +98,7 @@ body {
   background-position-x: 100%;
   background-position-y: 100%;
   list-style-type: none;
-  row-gap: 20px;
+  row-gap: 0;
 }
 
 .close-btn {
@@ -109,9 +109,8 @@ body {
 
 .item-links li {
   width: 90%;
-  height: 2%;
   position: relative;
-  margin: 10px auto;
+  margin: 5px auto;
   z-index: 999;
   padding: 0;
   align-items: center;
@@ -119,11 +118,13 @@ body {
 
 .item-links a {
   color: #edecff;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   display: flex;
   text-transform: capitalize;
   justify-content: space-between;
+  align-items: center;
+  height: 35px;
 }
 
 .content {
@@ -843,7 +844,8 @@ body {
     z-index: 9;
   }
 
-  .wrapper button {
+  .wrapper button,
+  .wrapper i {
     display: none;
   }
 
@@ -1043,7 +1045,7 @@ body {
     flex-direction: row;
     column-gap: 50px;
   }
-  
+
   .modal-title {
     font-weight: 500;
     font-size: 24px;

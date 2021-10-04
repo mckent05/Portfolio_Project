@@ -5,20 +5,20 @@ const projectInfo = {
   tech1: 'html',
   tech2: 'css',
   tech3: 'Ruby on Rails',
-  tech4: 'Ruby'
+  tech4: 'Ruby',
 };
 
 const btn = document.querySelector('.icon img');
 const overlay = document.querySelector('.wrapper');
-const clos = document.querySelector('.close-btn')
-let openModal = document.querySelectorAll('.proj-btn');
+const clos = document.querySelector('.close-btn');
+const openModal = document.querySelectorAll('.proj-btn');
 const modal = document.querySelector('.work-modal-cont');
 const bod = document.querySelector('.body');
 const email = document.getElementById('email');
 const errorMessage = document.querySelector('.error-msg');
 const form = document.querySelector('.form');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', (e) => {
   if (!email.validity.valid) {
     showError();
     e.preventDefault();
@@ -26,15 +26,14 @@ form.addEventListener('submit', e => {
   if (isUpper(email)) {
     showError();
     e.preventDefault();
-}
-
+  }
 });
 
 function showError() {
   if (email.validity.typeMismatch) {
     errorMessage.innerHTML = '*Please Enter Valid email';
     errorMessage.classList.add('show-error');
-    setTimeout (function() {
+    setTimeout( () => {
       errorMessage.innerHTML = '';
       errorMessage.classList.remove('show-error');
     }, 2000);
@@ -47,12 +46,12 @@ function showError() {
     errorMessage.innerHTML = '* Your email should be small letters';
     errorMessage.classList.add('show-error');
   }
-};
+}
 
 function isUpper(email) {
   const str = email.value;
   return !/[a-z]/.test(str) && /[A-Z]/.test(str);
-};
+}
 
 window.addEventListener('DOMContentLoaded', () => {
   modal.innerHTML = ` <div class="work-modal">
@@ -85,9 +84,9 @@ window.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </div>`;
-  let closeModal = document.querySelector('.close-modal');
-  closeModal.addEventListener('click', function() {
-    modal.classList.remove ('show-modal');
+  const closeModal = document.querySelector('.close-modal');
+  closeModal.addEventListener('click', () => {
+    modal.classList.remove('show-modal');
     bod.classList.remove('isfixed');
   });
 });
@@ -95,11 +94,11 @@ window.addEventListener('DOMContentLoaded', () => {
 btn.addEventListener('click', () => {
   overlay.classList.add('show-nav');
 });
-clos.addEventListener ('click', () => {
+clos.addEventListener('click', () => {
   overlay.classList.remove ('show-nav');
 });
 
-window.addEventListener ('scroll', () => {
+window.addEventListener('scroll', () => {
   const scroll = this.pageYOffset;
   if (scroll > 50) {
     overlay.classList.remove('show-nav');
