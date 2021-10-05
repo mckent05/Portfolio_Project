@@ -10,7 +10,7 @@ const projectInfo = {
 
 const btn = document.querySelector('.icon img');
 const overlay = document.querySelector('.wrapper');
-const clos = document.querySelector('.close-btn');
+const closeBtn = document.querySelector('.close-btn');
 const openModal = document.querySelectorAll('.proj-btn');
 const modal = document.querySelector('.work-modal-cont');
 const bod = document.querySelector('.body');
@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
 btn.addEventListener('click', () => {
   overlay.classList.add('show-nav');
 });
-clos.addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
   overlay.classList.remove('show-nav');
 });
 

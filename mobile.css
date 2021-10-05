@@ -4,12 +4,10 @@
   --clr-white: #fff;
   --clr-background: #191765;
   --display-1: flex;
-  --ff-primary: 'Roboto', 'sanserif'; 
+  --ff-primary: 'Roboto','sanserif';
   --ff-secondary: #edecff;
-  --text-align: 'center'
+  --text-align: 'center';
 }
-
-
 
 body {
   width: 375px;
