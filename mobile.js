@@ -40,7 +40,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
 btn.addEventListener('click', () => {
   overlay.classList.add('show-nav');
 });
