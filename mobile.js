@@ -1,19 +1,6 @@
-const projectInfo = {
-  title: 'multi-post story',
-  image: 'icons/portfolio.png',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
-  tech1: 'html',
-  tech2: 'css',
-  tech3: 'Ruby on Rails',
-  tech4: 'Ruby',
-};
-
 const btn = document.querySelector('.icon img');
 const overlay = document.querySelector('.wrapper');
 const clos = document.querySelector('.close-btn');
-// const openModal = document.querySelectorAll('.proj-btn');
-// const modal = document.querySelector('.work-modal-cont');
-// const bod = document.querySelector('.body');
 const email = document.getElementById('email');
 const errorMessage = document.querySelector('.error-msg');
 const form = document.querySelector('.form');
