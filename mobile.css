@@ -690,11 +690,20 @@ body {
   row-gap: 2px;
   align-items: center;
   width: 355px;
+  justify-content: center;
 }
 
 .underline-footer {
   border: 1px solid grey;
   width: 90%;
+}
+
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  height: 40px;
 }
 
 .mymail {
@@ -801,10 +810,12 @@ body {
 
   .footer-social-media {
     display: flex;
-    flex-direction: row;
-    column-gap: 20px;
+    flex-direction: column;
+    row-gap: 5px;
     align-items: center;
+    height: 40px;
   }
+
 }
 
 @media screen and (min-width: 992px) {
