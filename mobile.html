@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akinlade Tope's Portfolio</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <nav class="main-nav">
             <div class="tool-bar">
@@ -35,28 +35,38 @@
                 </div>
             </div>
             <div class="wrapper">
-                <ul class="item-links">
-                    <li class="item1">
-                        <a href="">Portfolio</a>
-                    </li>
-                    <li class="item2">
-                        <a href="">About</a>
-                    </li>
-                    <li class="item3">
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
+                <div class="nav-link">
+                    <ul class="item-links">
+                        <li class="item1">
+                            <a href="#portfolio" role="button">
+                                <p>Portfolio</p>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                            </li>
+                        <li class="item2">
+                            <a href="#about" role="button">
+                                <p>about</p>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li class="item3">
+                            <a href="#contact" role="button"> <p>Contact</p>
+                            <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="close-btn"><i class="fa fa-times"></i></button>
+                </div>
                 <div class="email-icon">
                     <a href="">
                         <img src="icons/Disabled.png" alt="email-icon">
                     </a>
-                    
                 </div>   
             </div>
              
         </nav>
     </header>
-    <section class="content">
+    <section class="content" id="about">
         
         <div class="name-header">
             <h1 class="primary-text">akinlade temitope</h1>
@@ -64,7 +74,7 @@
             <p class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <div class="underline"></div>
         </div>
-        <div class="skills">
+        <div class="skills" >
             <div class="lang-skills">
                 <p class="lang">Language</p>
                 <div class="language">
@@ -161,7 +171,10 @@
             </div>
         </div>
     </section>
-    <section class="work-section">
+    <section class="work-modal-cont">
+       
+    </section>
+    <section class="work-section" id="portfolio">
         <div class="work-title">
             <h1>My recent work</h1>
             <div class="underline3"></div>
@@ -249,16 +262,17 @@
             </div>
         </div>
     </section>
-    <section class="contact-form">
+    <section class="contact-form" id="contact">
         <div class="contact-me">
             <h2 class="contact-us">contact us</h2>
             <h2 class="chat">let's chat!</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
-        <form action="https://formspree.io/f/xjvjloyy" method="POST" class="form">
+        <form action="https://formspree.io/f/xjvjloyy" method="POST" class="form" novalidate>
           <input id="input" type="text" required placeholder="text input" maxlength="30" name="name">
           <input type="email" required placeholder="myemail@gmail.com" name="email" id="email">
           <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
+          <span class="error-msg">failed fgffgfgfgfgfgfg</span>
           <button type="submit" class="submit-btn">send</button>
         </form>
     </section>
