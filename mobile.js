@@ -11,9 +11,9 @@ const projectInfo = {
 const btn = document.querySelector('.icon img');
 const overlay = document.querySelector('.wrapper');
 const clos = document.querySelector('.close-btn');
-const openModal = document.querySelectorAll('.proj-btn');
-const modal = document.querySelector('.work-modal-cont');
-const bod = document.querySelector('.body');
+// const openModal = document.querySelectorAll('.proj-btn');
+// const modal = document.querySelector('.work-modal-cont');
+// const bod = document.querySelector('.body');
 const email = document.getElementById('email');
 const errorMessage = document.querySelector('.error-msg');
 const form = document.querySelector('.form');
@@ -52,8 +52,6 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
-
-
 
 btn.addEventListener('click', () => {
   overlay.classList.add('show-nav');
