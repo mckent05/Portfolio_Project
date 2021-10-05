@@ -53,43 +53,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  modal.innerHTML = ` <div class="work-modal">
-    <div class="modal-header">
-        <h2 class="modal-title">${projectInfo.title}</h2>
-        <button class="close-modal"><i class="fa fa-times"></i></button>
-    </div>
-    <div class="modal-content">
-        <img src=${projectInfo.image} alt="modal-img" class="modal-img">
-        <div class="modal-desc">
-            <p>${projectInfo.description}</p>
-            <ul class="tag">
-                <li class="list1">${projectInfo.tech1}</li>
-                <li class="list2">${projectInfo.tech2}</li>
-                <li class="list3 tope3">${projectInfo.tech3}</li>
-                <li class="list4">${projectInfo.tech4}</li>
-            </ul>
-            <div class="modal-btn">
-                <button class="modal-btn1">
-                    <p>see live</p>
-                    <img src="icons/modal-social.png" alt="modal-social">
-                </button>
-                <button class="modal-btn2">
-                    <p>see source</p>
-                    <img src="icons/modal-social1.png" alt="modal-social">
-                </button>
 
-            </div>
-
-        </div>
-    </div>
-</div>`;
-  const closeModal = document.querySelector('.close-modal');
-  closeModal.addEventListener('click', () => {
-    modal.classList.remove('show-modal');
-    bod.classList.remove('isfixed');
-  });
-});
 
 btn.addEventListener('click', () => {
   overlay.classList.add('show-nav');
@@ -105,9 +69,3 @@ window.addEventListener('scroll', () => {
   }
 });
 
-openModal.forEach((project) => {
-  project.addEventListener('click', () => {
-    modal.classList.add('show-modal');
-    bod.classList.add('isfixed');
-  });
-});
