@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
+:root {
+  --clr-white: #fff;
+  --clr-background: #191765;
+  --display-1: flex;
+  --ff-primary: 'Roboto', 'sanserif'; 
+  --ff-secondary: #edecff;
+  --text-align: 'center'
+}
+
+
+
 body {
   width: 375px;
   top: 0;
@@ -7,7 +18,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #191765;
+  background-color: var(--clr-background);
   z-index: 999;
   scroll-behavior: smooth;
 }
@@ -51,7 +62,7 @@ body {
   width: 375px;
   position: absolute;
   height: 100vh;
-  background-color: #191765;
+  background-color: var(--clr-background);
   top: 0%;
   left: 0;
   bottom: 0%;
@@ -368,7 +379,7 @@ body {
 .work-modal-cont {
   position: absolute;
   width: 100%;
-  background-color: #191765;
+  background-color: var(--clr-background);
   z-index: 999;
   top: 0;
   left: 0;
