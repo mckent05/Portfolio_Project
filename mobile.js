@@ -20,8 +20,9 @@ const form = document.querySelector('.form');
 const myname = document.getElementById('input');
 const message = document.getElementById('message');
 
-const getLocalStorage = () => localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
-
+function getLocalStorage() {
+  return localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
+}
 
 const addToLocalStorage = (myName, myMail, myMessage) => {
   const details = { myName, myMail, myMessage };
@@ -82,7 +83,7 @@ form.addEventListener('submit', (e) => {
   }
   addToLocalStorage(formInfo.formName, formInfo.formMail, formInfo.formMessage);
 });
-  
+
 window.addEventListener('DOMContentLoaded', () => {
   modal.innerHTML = ` <div class="work-modal">
     <div class="modal-header">
