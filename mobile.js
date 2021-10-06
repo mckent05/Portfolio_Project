@@ -20,10 +20,10 @@ const form = document.querySelector('.form');
 const myname = document.getElementById('input');
 const message = document.getElementById('message');
 
-let getLocalStorage = () => { return localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
-};
+const getLocalStorage = () => localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
 
-let addToLocalStorage = (myName,myMail,myMessage ) => {
+
+const addToLocalStorage = (myName, myMail, myMessage) => {
   const details = { myName, myMail, myMessage };
   const getForm = getLocalStorage();
   getForm.push(details);
