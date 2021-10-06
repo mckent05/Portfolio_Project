@@ -40,8 +40,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function isUpper(email) {
-  const str = email.value.toLowerCase()
-  return email.value == str
+  const str = email.value.toLowerCase();
+  return email.value === str;
 }
 
 function showError() {
@@ -58,7 +58,7 @@ function showError() {
     errorMessage.classList.add('show-error');
   }
   if (!isUpper(email)) {
-    errorMessage.innerHTML = '* Please Enter E-mail in small letter';
+    errorMessage.innerHTML = '* Please Enter E-mail in small letters';
     errorMessage.classList.add('show-error');
     setTimeout(() => {
       errorMessage.innerHTML = '';
