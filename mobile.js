@@ -20,23 +20,22 @@ const form = document.querySelector('.form');
 const myname = document.getElementById('input');
 const message = document.getElementById('message');
 
-getLocalStorage = () => {
-  return localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
-}
+let getLocalStorage = () => { return localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
+};
 
-addToLocalStorage = (myName, myMail, myMessage ) => {
-  let details = {myName, myMail, myMessage};
-  let getForm = getLocalStorage();
+let addToLocalStorage = (myName,myMail,myMessage ) => {
+  const details = { myName, myMail, myMessage };
+  const getForm = getLocalStorage();
   getForm.push(details);
   localStorage.setItem('formDetails', JSON.stringify(getForm));
-}
+};
 
 window.addEventListener('DOMContentLoaded', () => {
-  let getForm = getLocalStorage();
-  let currentInfo = getForm.length -1;
+  const getForm = getLocalStorage();
+  const currentInfo = getForm.length - 1;
   myname.value = getForm[currentInfo].myName;
   email.value = getForm[currentInfo].myMail;
-  message.value=getForm[currentInfo].myMessage;
+  message.value = getForm[currentInfo].myMessage;
 });
 
 function isUpper(email) {
@@ -68,22 +67,21 @@ function showError() {
 }
 
 form.addEventListener('submit', (e) => {
-    const formInfo = {
-      formName: myname.value,
-      formMail: email.value,
-      formMessage: message.value,
-    };
-    if (!email.validity.valid) {
-      showError();
-      e.preventDefault();
-    }
-    if (isUpper(email)) {
-      showError();
-      e.preventDefault();
-    }
-    addToLocalStorage(formInfo.formName, formInfo.formMail, formInfo.formMessage);
-  
-  });
+  const formInfo = {
+    formName: myname.value,
+    formMail: email.value,
+    formMessage: message.value,
+  };
+  if (!email.validity.valid) {
+    showError();
+    e.preventDefault();
+  }
+  if (isUpper(email)) {
+    showError();
+    e.preventDefault();
+  }
+  addToLocalStorage(formInfo.formName, formInfo.formMail, formInfo.formMessage);
+});
   
 window.addEventListener('DOMContentLoaded', () => {
   modal.innerHTML = ` <div class="work-modal">
