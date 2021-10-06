@@ -67,23 +67,7 @@ function showError() {
   }
 }
 
-form.addEventListener('submit', (e) => {
-  const formInfo = {
-    formName: myname.value,
-    formMail: email.value,
-    formMessage: message.value,
-  };
-  if (!email.validity.valid) {
-    showError();
-    e.preventDefault();
-  }
-  if (isUpper(email)) {
-    showError();
-    e.preventDefault();
-  }
-  addToLocalStorage(formInfo.formName, formInfo.formMail, formInfo.formMessage);
 
-});
 
 window.addEventListener('DOMContentLoaded', () => {
   modal.innerHTML = ` <div class="work-modal">
