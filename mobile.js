@@ -24,7 +24,13 @@ function getLocalStorage() {
   return localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
 }
 
-
+const addToLocalStorage = (myName, myMail, myMessage) => {
+    const details = { myName, myMail, myMessage };
+    const getForm = getLocalStorage();
+    getForm.push(details);
+    localStorage.setItem('formDetails', JSON.stringify(getForm));
+  };
+  
 function isUpper(email) {
   const str = email.value.toLowerCase();
   return email.value === str;
