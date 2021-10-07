@@ -21,7 +21,7 @@ const myname = document.getElementById('input');
 const message = document.getElementById('message');
 
 function getLocalStorage() {
-  return JSON.parse(localStorage.getItem('formDetails')) 
+  return JSON.parse(localStorage.getItem('formDetails'));
 }
 
 const addToLocalStorage = (myName, myMail, myMessage) => {
@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('show-modal');
     bod.classList.remove('isfixed');
   });
-  const fdetails = getLocalStorage()
+  const fdetails = getLocalStorage();
   myname.value = fdetails.myName;
   email.value = fdetails.myMail;
   message.value = fdetails.myMessage;
