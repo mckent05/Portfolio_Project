@@ -69,7 +69,6 @@ function showError() {
 }
 
 form.addEventListener('submit', (e) => {
-  
   if (!email.validity.valid) {
     showError();
     e.preventDefault();
