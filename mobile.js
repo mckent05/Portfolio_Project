@@ -24,20 +24,6 @@ function getLocalStorage() {
   return localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
 }
 
-const addToLocalStorage = (myName, myMail, myMessage) => {
-  const details = { myName, myMail, myMessage };
-  const getForm = getLocalStorage();
-  getForm.push(details);
-  localStorage.setItem('formDetails', JSON.stringify(getForm));
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-  const getForm = getLocalStorage();
-  const currentInfo = getForm.length - 1;
-  myname.value = getForm[currentInfo].myName;
-  email.value = getForm[currentInfo].myMail;
-  message.value = getForm[currentInfo].myMessage;
-});
 
 function isUpper(email) {
   const str = email.value.toLowerCase();
@@ -118,6 +104,11 @@ window.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('show-modal');
     bod.classList.remove('isfixed');
   });
+  const getForm = getLocalStorage();
+  const currentInfo = getForm.length - 1;
+  myname.value = getForm[currentInfo].myName;
+  email.value = getForm[currentInfo].myMail;
+  message.value = getForm[currentInfo].myMessage;
 });
 
 btn.addEventListener('click', () => {
