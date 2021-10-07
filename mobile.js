@@ -21,14 +21,12 @@ const myname = document.getElementById('input');
 const message = document.getElementById('message');
 
 function getLocalStorage() {
-  return localStorage.getItem('formDetails') ? JSON.parse(localStorage.getItem('formDetails')) : [];
+  return JSON.parse(localStorage.getItem('formDetails')) 
 }
 
 const addToLocalStorage = (myName, myMail, myMessage) => {
-  const details = { myName, myMail, myMessage };
-  const getForm = getLocalStorage();
-  getForm.push(details);
-  localStorage.setItem('formDetails', JSON.stringify(getForm));
+  const formDetails = { myName, myMail, myMessage };
+  localStorage.setItem('formDetails', JSON.stringify(formDetails));
 };
 
 form.addEventListener('input', () => {
@@ -113,11 +111,10 @@ window.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('show-modal');
     bod.classList.remove('isfixed');
   });
-  const getForm = getLocalStorage();
-  const currentInfo = getForm.length - 1;
-  myname.value = getForm[currentInfo].myName;
-  email.value = getForm[currentInfo].myMail;
-  message.value = getForm[currentInfo].myMessage;
+  const fdetails = getLocalStorage()
+  myname.value = fdetails.myName;
+  email.value = fdetails.myMail;
+  message.value = fdetails.myMessage;
 });
 
 btn.addEventListener('click', () => {
