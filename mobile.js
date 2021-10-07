@@ -31,6 +31,15 @@ const addToLocalStorage = (myName, myMail, myMessage) => {
   localStorage.setItem('formDetails', JSON.stringify(getForm));
 };
 
+form.addEventListener('input', () => {
+  const formInfo = {
+    formName: myname.value,
+    formMail: email.value,
+    formMessage: message.value,
+  };
+  addToLocalStorage(formInfo.formName, formInfo.formMail, formInfo.formMessage);
+});
+
 function isUpper(email) {
   const str = email.value.toLowerCase();
   return email.value === str;
@@ -60,11 +69,7 @@ function showError() {
 }
 
 form.addEventListener('submit', (e) => {
-  const formInfo = {
-    formName: myname.value,
-    formMail: email.value,
-    formMessage: message.value,
-  };
+  
   if (!email.validity.valid) {
     showError();
     e.preventDefault();
@@ -73,7 +78,6 @@ form.addEventListener('submit', (e) => {
     showError();
     e.preventDefault();
   }
-  addToLocalStorage(formInfo.formName, formInfo.formMail, formInfo.formMessage);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
