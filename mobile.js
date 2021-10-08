@@ -118,7 +118,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 btn.addEventListener('click', () => {
-  overlay.classList.add('show-nav');
+  overlay.classList.add('show-navs');
 });
 clos.addEventListener('click', () => {
   overlay.classList.remove('show-nav');
