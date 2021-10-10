@@ -1,4 +1,5 @@
-const projectInfo = {
+const projectInfo = [
+  {
   title: 'multi-post story',
   image: 'icons/portfolio.png',
   description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
@@ -6,7 +7,35 @@ const projectInfo = {
   tech2: 'css',
   tech3: 'Ruby on Rails',
   tech4: 'Ruby',
-};
+},
+{
+  title: 'multi-post story2',
+  image: 'icons/portfolio.png',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
+  tech1: 'html',
+  tech2: 'css',
+  tech3: 'Ruby on Rails',
+  tech4: 'Ruby',
+},
+{
+  title: 'multi-post story3',
+  image: 'icons/portfolio.png',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
+  tech1: 'html',
+  tech2: 'css',
+  tech3: 'Ruby on Rails',
+  tech4: 'Ruby',
+},
+{
+  title: 'multi-post story4',
+  image: 'icons/portfolio.png',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
+  tech1: 'html',
+  tech2: 'css',
+  tech3: 'Ruby on Rails',
+  tech4: 'Ruby',
+}
+];
 
 const btn = document.querySelector('.icon img');
 const overlay = document.querySelector('.wrapper');
@@ -19,6 +48,7 @@ const errorMessage = document.querySelector('.error-msg');
 const form = document.querySelector('.form');
 const myname = document.getElementById('input');
 const message = document.getElementById('message');
+let currentView = 0;
 
 function getLocalStorage() {
   return JSON.parse(localStorage.getItem('formDetails'));
@@ -77,21 +107,21 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  modal.innerHTML = ` <div class="work-modal">
+let loadProject = (view) => {
+  modal.innerHTML = `<div class="work-modal">
     <div class="modal-header">
-        <h2 class="modal-title">${projectInfo.title}</h2>
+        <h2 class="modal-title">${projectInfo[view].title}</h2>
         <button class="close-modal"><i class="fa fa-times"></i></button>
     </div>
     <div class="modal-content">
-        <img src=${projectInfo.image} alt="modal-img" class="modal-img">
+        <img src=${projectInfo[view].image} alt="modal-img" class="modal-img">
         <div class="modal-desc">
-            <p>${projectInfo.description}</p>
+            <p>${projectInfo[view].description}</p>
             <ul class="tag">
-                <li class="list1">${projectInfo.tech1}</li>
-                <li class="list2">${projectInfo.tech2}</li>
-                <li class="list3 tope3">${projectInfo.tech3}</li>
-                <li class="list4">${projectInfo.tech4}</li>
+                <li class="list1">${projectInfo[view].tech1}</li>
+                <li class="list2">${projectInfo[view].tech2}</li>
+                <li class="list3 tope3">${projectInfo[view].tech3}</li>
+                <li class="list4">${projectInfo[view].tech4}</li>
             </ul>
             <div class="modal-btn">
                 <button class="modal-btn1">
@@ -102,15 +132,40 @@ window.addEventListener('DOMContentLoaded', () => {
                     <p>see source</p>
                     <img src="icons/modal-social1.png" alt="modal-social">
                 </button>
+                
+            </div>
+            <div class="project-control">
+              <button class="move-left">previous project</button>
+              <button class="move-right">next project</button>
             </div>
         </div>
     </div>
 </div>`;
   const closeModal = document.querySelector('.close-modal');
+  const prevProject =  document.querySelector('.move-left');
+  const nextProject = document.querySelector('.move-right');
   closeModal.addEventListener('click', () => {
     modal.classList.remove('show-modal');
     bod.classList.remove('isfixed');
+    });
+  prevProject.addEventListener('click', () => {
+    currentView --;
+    if (currentView < 0) {
+      currentView = projectInfo.length - 1;
+    }
+    loadProject(currentView);
   });
+  nextProject.addEventListener ('click', () => {
+    currentView ++;
+    if (currentView > projectInfo.length - 1) {
+      currentView = 0;
+    }
+    loadProject(currentView);
+  });
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+  loadProject(currentView)
   const fdetails = getLocalStorage();
   myname.value = fdetails.myName;
   email.value = fdetails.myMail;
@@ -131,9 +186,12 @@ window.addEventListener('scroll', () => {
   }
 });
 
-openModal.forEach((project) => {
+openModal.forEach((project,index) => {
   project.addEventListener('click', () => {
+    loadProject(index)
     modal.classList.add('show-modal');
     bod.classList.add('isfixed');
   });
 });
+
+
