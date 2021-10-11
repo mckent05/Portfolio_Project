@@ -9,6 +9,10 @@
   --text-align: 'center';
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 375px;
   top: 0;
@@ -18,7 +22,6 @@ body {
   left: 0;
   background-color: var(--clr-background);
   z-index: 9;
-  scroll-behavior: smooth;
 }
 
 .isfixed {

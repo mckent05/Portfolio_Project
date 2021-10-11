@@ -165,7 +165,15 @@ let loadProject = (view) => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  loadProject(currentView)
+  
+  openModal.forEach((project,index) => {
+    project.addEventListener('click', () => {
+      currentView = index;
+      loadProject(currentView);
+      modal.classList.add('show-modal');
+      bod.classList.add('isfixed');
+    });
+  });
   const fdetails = getLocalStorage();
   myname.value = fdetails.myName;
   email.value = fdetails.myMail;
@@ -186,12 +194,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-openModal.forEach((project,index) => {
-  project.addEventListener('click', () => {
-    loadProject(index)
-    modal.classList.add('show-modal');
-    bod.classList.add('isfixed');
-  });
-});
+
 
 
