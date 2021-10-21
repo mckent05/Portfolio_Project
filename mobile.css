@@ -390,12 +390,14 @@ body {
   justify-content: center;
   height: 100%;
   overflow-y: scroll;
+  border: 2px solid yellow;
 }
 
 .work-modal {
-  position: relative;
   width: 80%;
-  top: 30%;
+  position: absolute;
+  top: 5%;
+  margin-bottom: 50px;
   border: 1px solid #fff;
   display: flex;
   row-gap: 15px;
@@ -403,7 +405,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.16);
-  margin: 0;
 }
 
 .show-modal {
@@ -424,17 +425,20 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .move-left,
 .move-right {
   width: 150px;
-  height: 40px;
+  height: 50px;
   border: none;
   background-color: #7d73fc;
   color: #fff;
   text-transform: capitalize;
   font-size: 18px;
+  padding: 10px;
+  margin-right: 15px;
 }
 
 .modal-header {
@@ -1076,7 +1080,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: 105%;
     background-position-y: 50%;
-    top: 30%;
+    top: 5%;
   }
 
   .modal-desc p {
