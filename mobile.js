@@ -18,6 +18,8 @@ const projectInfo = [
   tech2: 'css',
   tech3: 'Ruby on Rails',
   tech4: 'Ruby',
+  live: '#',
+  source: '#',
 },
 {
   title: 'multi-post story3',
@@ -27,6 +29,8 @@ const projectInfo = [
   tech2: 'css',
   tech3: 'Ruby on Rails',
   tech4: 'Ruby',
+  live: '#',
+  source: '#',
 },
 {
   title: 'multi-post story4',
@@ -36,6 +40,8 @@ const projectInfo = [
   tech2: 'css',
   tech3: 'Ruby on Rails',
   tech4: 'Ruby',
+  live: '#',
+  source: '#',
 }
 ];
 
