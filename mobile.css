@@ -260,10 +260,12 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 25px;
   color: #fff;
   text-align: center;
+  word-spacing: 5px;
+  
 }
 
 .lang-cont li p {
@@ -443,6 +445,11 @@ body {
   justify-content: center;
 }
 
+.move-left:hover, 
+.move-right:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
 .modal-header {
   position: relative;
   width: 90%;
@@ -524,7 +531,7 @@ body {
   align-items: center;
 }
 
-.modal-btn button {
+.modal-btn a {
   width: 40%;
   height: 50px;
   background-color: #7d73fc;
@@ -535,9 +542,10 @@ body {
   justify-content: space-around;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
-.modal-btn button:hover {
+.modal-btn a:hover {
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
@@ -575,6 +583,11 @@ body {
   width: 90%;
   row-gap: 5%;
   margin: 0 auto;
+}
+
+.work1-img {
+  height: 100%;
+  width: 100%;
 }
 
 .work1-link {

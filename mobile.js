@@ -1,12 +1,14 @@
 const projectInfo = [
   {
-  title: 'multi-post story',
-  image: 'icons/portfolio.png',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
+  title: 'survival the Portal!',
+  image: 'icons/modalimage.png',
+  description: 'This project is my first capstone project in Microverse, HTML and CSS module. The project is about surviving the first few weeks of the portal. It has a main program session that tells readers about the activities to expect during the seminar, it also has the featured speakers where micronauts who had just finished the portal modue sharetheir experience on how they were able to survive. I also made a mobile version for this project. this website loads the speakers section dynamically using Javascript',
   tech1: 'html',
   tech2: 'css',
-  tech3: 'Ruby on Rails',
+  tech3: 'Javascript',
   tech4: 'Ruby',
+  live: 'https://mckent05.github.io/Capstone_Project/home.html',
+  source: 'https://github.com/mckent05/Capstone_Project',
 },
 {
   title: 'multi-post story2',
@@ -124,14 +126,14 @@ let loadProject = (view) => {
                 <li class="list4">${projectInfo[view].tech4}</li>
             </ul>
             <div class="modal-btn">
-                <button class="modal-btn1">
+                <a href= "${projectInfo[view].live}" class="modal-btn1">
                     <p>see live</p>
                     <img src="icons/modal-social.png" alt="modal-social">
-                </button>
-                <button class="modal-btn2">
+                </a>
+                <a href= "${projectInfo[view].source}" class="modal-btn2">
                     <p>see source</p>
                     <img src="icons/modal-social1.png" alt="modal-social">
-                </button>
+                </a>
                 
             </div>
             <div class="project-control">
