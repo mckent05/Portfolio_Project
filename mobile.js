@@ -1,7 +1,7 @@
 const projectInfo = [
   {
   title: 'survival the Portal!',
-  image: 'icons/modalimage.png',
+  image: 'icons/modalimage.PNG',
   description: 'This project is my first capstone project in Microverse, HTML and CSS module. The project is about surviving the first few weeks of the portal. It has a main program session that tells readers about the activities to expect during the seminar, it also has the featured speakers where micronauts who had just finished the portal modue sharetheir experience on how they were able to survive. I also made a mobile version for this project. this website loads the speakers section dynamically using Javascript',
   tech1: 'html',
   tech2: 'css',
