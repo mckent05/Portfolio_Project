@@ -1,48 +1,48 @@
 const projectInfo = [
   {
-  title: 'survival the Portal!',
-  image: 'icons/modalimage.PNG',
-  description: 'This project is my first capstone project in Microverse, HTML and CSS module. The project is about surviving the first few weeks of the portal. It has a main program session that tells readers about the activities to expect during the seminar, it also has the featured speakers where micronauts who had just finished the portal modue sharetheir experience on how they were able to survive. I also made a mobile version for this project. this website loads the speakers section dynamically using Javascript',
-  tech1: 'html',
-  tech2: 'css',
-  tech3: 'Javascript',
-  tech4: 'Ruby',
-  live: 'https://mckent05.github.io/Capstone_Project/home.html',
-  source: 'https://github.com/mckent05/Capstone_Project',
-},
-{
-  title: 'multi-post story2',
-  image: 'icons/portfolio.png',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
-  tech1: 'html',
-  tech2: 'css',
-  tech3: 'Ruby on Rails',
-  tech4: 'Ruby',
-  live: '#',
-  source: '#',
-},
-{
-  title: 'multi-post story3',
-  image: 'icons/portfolio.png',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
-  tech1: 'html',
-  tech2: 'css',
-  tech3: 'Ruby on Rails',
-  tech4: 'Ruby',
-  live: '#',
-  source: '#',
-},
-{
-  title: 'multi-post story4',
-  image: 'icons/portfolio.png',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble',
-  tech1: 'html',
-  tech2: 'css',
-  tech3: 'Ruby on Rails',
-  tech4: 'Ruby',
-  live: '#',
-  source: '#',
-}
+    title: 'steve football app',
+    image: 'icons/home2.PNG',
+    description: 'A Web app for football lovers. This app consumes data froman API and displays league standings for top leahues around the world. I built this app using React-Redux. I further strengthened my knowledge about React-Redux while building this app. Do you want to check the league standings for your favorite clubs? Then this is the app to do just that',
+    tech1: 'html',
+    tech2: 'css',
+    tech3: 'Javascript',
+    tech4: 'React',
+    live: 'https://steven-football-app.herokuapp.com/',
+    source: 'https://github.com/mckent05/my-football-app.git',
+  },
+  {
+    title: 'Space Travelers hub',
+    image: 'icons/dragons.png',
+    description: 'Do you have a childhood dream of travelling to space? Ever wondered how being in space might be? Are you in search for a website to book a rocket to make your dreams come true? Then this is the site for you. This is a web app that lets users book rockets to take them to space. A SPA that lets you book a rocket, dragon or join a mission. This is a group project, and i was responsible for building the rockets page and my rockets section in my profile page. In this project i learnt how to connect React to redux',
+    tech1: 'html',
+    tech2: 'css',
+    tech3: 'React',
+    tech4: 'Redux',
+    live: 'https://steve-rockets-hub.netlify.app/',
+    source: 'https://github.com/mckent05/space-travelers-hub.git',
+  },
+  {
+    title: 'Book Store CMS',
+    image: 'icons/bookstore.PNG',
+    description: 'Are you a lover of books? Do you have probelems keeping track of your progress while reading a book? If yes, then I have built this app for you. This is a book store app that helps book lovers keep track of their progress while reading a book, this app lets you add a new book to your list of books, allows users enter details about a current book. It lets users delete a book upon completion and also gives progress made ona particular book. While buildig this project I learnt how to use Redux to consume data from an API. This app was built using React-Redux',
+    tech1: 'html',
+    tech2: 'css',
+    tech3: 'Javascript',
+    tech4: 'React',
+    live: 'https://mckent05.github.io/bookstore_react/',
+    source: 'https://github.com/mckent05/bookstore_react.git',
+  },
+  {
+    title: 'ToDo App',
+    image: 'icons/todo2.PNG',
+    description: 'Everyone at one point or the other has struggled with productivity or organazing their daily tasks. this is a to-do list app that helps you increase your productivity. A web app that allows users plan their daily tasks. Users can enter a new task, edit task, delete a task and mark a task upon completion.while building this app I learnt how to use react as a front end library while building repsonsive web apps.',
+    tech1: 'html',
+    tech2: 'css',
+    tech3: 'Ruby on Rails',
+    tech4: 'Ruby',
+    live: 'https://mckent05.github.io/to-do-React/',
+    source: 'https://github.com/mckent05/to-do-React.git',
+  },
 ];
 
 const btn = document.querySelector('.icon img');
@@ -115,7 +115,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-let loadProject = (view) => {
+const loadProject = (view) => {
   modal.innerHTML = `<div class="work-modal">
     <div class="modal-header">
         <h2 class="modal-title">${projectInfo[view].title}</h2>
@@ -132,11 +132,11 @@ let loadProject = (view) => {
                 <li class="list4">${projectInfo[view].tech4}</li>
             </ul>
             <div class="modal-btn">
-                <a href= "${projectInfo[view].live}" class="modal-btn1">
+                <a href= "${projectInfo[view].live}" target="_blank" class="modal-btn1">
                     <p>see live</p>
                     <img src="icons/modal-social.png" alt="modal-social">
                 </a>
-                <a href= "${projectInfo[view].source}" class="modal-btn2">
+                <a href= "${projectInfo[view].source}" target="_blank" class="modal-btn2">
                     <p>see source</p>
                     <img src="icons/modal-social1.png" alt="modal-social">
                 </a>
@@ -150,21 +150,21 @@ let loadProject = (view) => {
     </div>
 </div>`;
   const closeModal = document.querySelector('.close-modal');
-  const prevProject =  document.querySelector('.move-left');
+  const prevProject = document.querySelector('.move-left');
   const nextProject = document.querySelector('.move-right');
   closeModal.addEventListener('click', () => {
     modal.classList.remove('show-modal');
     bod.classList.remove('isfixed');
-    });
+  });
   prevProject.addEventListener('click', () => {
-    currentView --;
+    currentView -= 1;
     if (currentView < 0) {
       currentView = projectInfo.length - 1;
     }
     loadProject(currentView);
   });
-  nextProject.addEventListener ('click', () => {
-    currentView ++;
+  nextProject.addEventListener('click', () => {
+    currentView += 1;
     if (currentView > projectInfo.length - 1) {
       currentView = 0;
     }
@@ -173,8 +173,7 @@ let loadProject = (view) => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  
-  openModal.forEach((project,index) => {
+  openModal.forEach((project, index) => {
     project.addEventListener('click', () => {
       currentView = index;
       loadProject(currentView);
@@ -201,7 +200,3 @@ window.addEventListener('scroll', () => {
     overlay.classList.remove('show-nav');
   }
 });
-
-
-
-
