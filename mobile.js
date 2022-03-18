@@ -24,7 +24,7 @@ const projectInfo = [
   {
     title: 'Maintenance Budget App',
     image: 'icons/budget2.PNG',
-    description: 'Have you been looking for an application that canhelpyou keep track of all your equipments maintenance and repair costs? then try this app out!. This application isa simple and fun web app that lets users keep track of their equiment maintenance and repair cost. A User must be signed up in order to use this application.',
+    description: 'Have you been looking for an application that canhelpyou keep track of all your equipments maintenance and repair costs? then try this app out!. This application isa simple and fun web app that lets users keep track of their equiment maintenance and repair cost.A User must be signed up in order to use this application.',
     tech1: 'Ruby',
     tech2: 'PostgreSql',
     tech3: 'RoR',
