@@ -1,5 +1,27 @@
 const projectInfo = [
   {
+    title: 'Somarven Arena',
+    image: 'icons/somarven2.PNG',
+    description: 'Are you looking to make an arena reservation for your upcoming event? Do you have an arena you will like to put up for lease?. If yes, this web-app is tailor made for you!!. Somarven arenas is a simple web-app that allows registered users book or make reservations for an arena, it also allows users add arenas they will like to lease out. Users can cancel reservations and do much more. Why not sign-up and check-out the cool features of this application. Its definitely worth the try!!',
+    tech1: 'React',
+    tech2: 'Javascript',
+    tech3: 'Rails',
+    tech4: 'PostgreSQL',
+    live: 'https://somarven.netlify.app/',
+    source: 'https://github.com/Somdotta07/Somarven-Arenas-frontend',
+  },
+  {
+    title: 'Maintenance Budget App',
+    image: 'icons/budget1.PNG',
+    description: 'Have you been looking for an application that canhelpyou keep track of all your equipments maintenance and repair costs? then try this app out!. This application isa simple and fun web app that lets users keep track of their equiment maintenance and repair cost.A User must be signed up in order to use this application.',
+    tech1: 'Ruby',
+    tech2: 'PostgreSql',
+    tech3: 'RoR',
+    tech4: 'HTML',
+    live: 'https://polar-lake-28978.herokuapp.com/',
+    source: 'https://github.com/mckent05/maintenance_budget',
+  },
+  {
     title: 'steve football app',
     image: 'icons/home2.PNG',
     description: 'A Web app for football lovers. This app consumes data froman API and displays league standings for top leahues around the world. I built this app using React-Redux. I further strengthened my knowledge about React-Redux while building this app. Do you want to check the league standings for your favorite clubs? Then this is the app to do just that',
@@ -21,28 +43,7 @@ const projectInfo = [
     live: 'https://steve-rockets-hub.netlify.app/',
     source: 'https://github.com/mckent05/space-travelers-hub.git',
   },
-  {
-    title: 'Maintenance Budget App',
-    image: 'icons/budget1.PNG',
-    description: 'Have you been looking for an application that canhelpyou keep track of all your equipments maintenance and repair costs? then try this app out!. This application isa simple and fun web app that lets users keep track of their equiment maintenance and repair cost.A User must be signed up in order to use this application.',
-    tech1: 'Ruby',
-    tech2: 'PostgreSql',
-    tech3: 'RoR',
-    tech4: 'HTML',
-    live: 'https://polar-lake-28978.herokuapp.com/',
-    source: 'https://github.com/mckent05/maintenance_budget',
-  },
-  {
-    title: 'ToDo App',
-    image: 'icons/todo2.PNG',
-    description: 'Everyone at one point or the other has struggled with productivity or organazing their daily tasks. this is a to-do list app that helps you increase your productivity. A web app that allows users plan their daily tasks. Users can enter a new task, edit task, delete a task and mark a task upon completion.while building this app I learnt how to use react as a front end library while building repsonsive web apps.',
-    tech1: 'html',
-    tech2: 'css',
-    tech3: 'Ruby on Rails',
-    tech4: 'Ruby',
-    live: 'https://mckent05.github.io/to-do-React/',
-    source: 'https://github.com/mckent05/to-do-React.git',
-  },
+  
 ];
 
 const btn = document.querySelector('.icon img');
