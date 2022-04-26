@@ -1,7 +1,18 @@
 const projectInfo = [
   {
+    title: 'E-commerce Web App',
+    image: 'icons/pdp.PNG',
+    description: 'Are you looking for an affordable site to buy some of your most needed products all in one place? Then this is the app you have been looking for. This web allows users shop for thier most needed items at affordable price. Why not patronize us today. I am sure rial will convince you.',
+    tech1: 'Javascript',
+    tech2: 'GraphQL',
+    tech3: 'React',
+    tech4: 'Redux',
+    live: 'https://scandi-store.netlify.app/',
+    source: 'https://github.com/mckent05/scandiweb-refix',
+  },
+  {
     title: 'Somarven Arena',
-    image: 'icons/somarven2.PNG',
+    image: 'icons/somarven2.png',
     description: 'Are you looking to make an arena reservation for your upcoming event? Do you have an arena you will like to put up for lease?. If yes, this web-app is tailor made for you!!. Somarven arenas is a simple web-app that allows registered users book or make reservations for an arena, it also allows users add arenas they will like to lease out. Users can cancel reservations and do much more. Why not sign-up and check-out the cool features of this application. Its definitely worth the try!!',
     tech1: 'React',
     tech2: 'Javascript',
@@ -32,18 +43,7 @@ const projectInfo = [
     live: 'https://steven-football-app.herokuapp.com/',
     source: 'https://github.com/mckent05/my-football-app.git',
   },
-  {
-    title: 'Space Travelers hub',
-    image: 'icons/dragons.png',
-    description: 'Do you have a childhood dream of travelling to space? Ever wondered how being in space might be? Are you in search for a website to book a rocket to make your dreams come true? Then this is the site for you. This is a web app that lets users book rockets to take them to space. A SPA that lets you book a rocket, dragon or join a mission. This is a group project, and i was responsible for building the rockets page and my rockets section in my profile page. In this project i learnt how to connect React to redux',
-    tech1: 'html',
-    tech2: 'css',
-    tech3: 'React',
-    tech4: 'Redux',
-    live: 'https://steve-rockets-hub.netlify.app/',
-    source: 'https://github.com/mckent05/space-travelers-hub.git',
-  },
-  
+
 ];
 
 const btn = document.querySelector('.icon img');
