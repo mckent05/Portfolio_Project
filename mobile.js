@@ -12,7 +12,7 @@ const projectInfo = [
   },
   {
     title: 'Somarven Arena',
-    image: 'icons/somarven2.png',
+    image: 'icons/somarven.png',
     description: 'Are you looking to make an arena reservation for your upcoming event? Do you have an arena you will like to put up for lease?. If yes, this web-app is tailor made for you!!. Somarven arenas is a simple web-app that allows registered users book or make reservations for an arena, it also allows users add arenas they will like to lease out. Users can cancel reservations and do much more. Why not sign-up and check-out the cool features of this application. Its definitely worth the try!!',
     tech1: 'React',
     tech2: 'Javascript',
