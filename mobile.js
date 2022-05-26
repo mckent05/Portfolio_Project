@@ -2,7 +2,7 @@ const projectInfo = [
   {
     title: 'E-commerce Web App',
     image: 'icons/pdp.PNG',
-    description: 'Are you looking for an affordable site to buy some of your most needed products all in one place? Then this is the app you have been looking for. This web allows users shop for thier most needed items at affordable price. Why not patronize us today. I am sure rial will convince you.',
+    description: 'Are you looking for an affordable site to buy some of your most needed products all in one place? Then this is the app you have been looking for. This web allows users shop for thier most needed items at affordable prices. Why not patronize us today. I am sure trial will convince you.',
     tech1: 'Javascript',
     tech2: 'GraphQL',
     tech3: 'React',
@@ -13,7 +13,7 @@ const projectInfo = [
   {
     title: 'Somarven Arena',
     image: 'icons/somarven1.png',
-    description: 'Are you looking to make an arena reservation for your upcoming event? Do you have an arena you will like to put up for lease?. If yes, this web-app is tailor made for you!!. Somarven arenas is a simple web-app that allows registered users book or make reservations for an arena, it also allows users add arenas they will like to lease out. Users can cancel reservations and do much more. Why not sign-up and check-out the cool features of this application. Its definitely worth the try!!',
+    description: 'Are you looking to book an arena reservation for your upcoming event? Do you have an arena you will like to put up for lease? If yes, this web-app is tailor made for you! Somarven arenas is a simple web-app that allows registered users book or make reservations for an arena, it also allows users add arenas they will like to lease out. Users can cancel reservations and do much more. Why not sign-up and check-out the cool features of this application. Its definitely worth the try!',
     tech1: 'React',
     tech2: 'Javascript',
     tech3: 'Rails',
@@ -24,7 +24,7 @@ const projectInfo = [
   {
     title: 'Maintenance Budget App',
     image: 'icons/budget1.PNG',
-    description: 'Have you been looking for an application that canhelpyou keep track of all your equipments maintenance and repair costs? then try this app out!. This application isa simple and fun web app that lets users keep track of their equiment maintenance and repair cost.A User must be signed up in order to use this application.',
+    description: 'Have you been looking for an application that can help you keep track of all your equipment maintenance and repair costs? then try this app out! This application isa simple and fun web app that lets users keep track of their equiment maintenance and repair cost.A User must be signed up in order to use this application.',
     tech1: 'Ruby',
     tech2: 'PostgreSql',
     tech3: 'RoR',
@@ -35,7 +35,7 @@ const projectInfo = [
   {
     title: 'steve football app',
     image: 'icons/home2.PNG',
-    description: 'A Web app for football lovers. This app consumes data froman API and displays league standings for top leahues around the world. I built this app using React-Redux. I further strengthened my knowledge about React-Redux while building this app. Do you want to check the league standings for your favorite clubs? Then this is the app to do just that',
+    description: 'A Web app for football lovers. This app consumes data froman API and displays league standings for top leahues around the world. I built this app using React-Redux. I further strengthened my knowledge about React-Redux while building this app. Do you want to check the league standings for your favorite clubs? Then this is the app to do just that.',
     tech1: 'html',
     tech2: 'css',
     tech3: 'Javascript',
